@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { translations, translationChunksConfig } from '@spartacus/assets';
 import { B2cStorefrontModule } from '@spartacus/storefront';
+import { CustomPdpModule } from './custom-pdp/custom-pdp.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
         level: '2.0',
         anonymousConsents: true
       }
-    })
+    }),
+    CustomPdpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
